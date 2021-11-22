@@ -1,0 +1,99 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#headerContainer"
+    ]
+  },
+  "flex-layout.col#headerContainer":{
+    "children": ["flex-layout.row#topHeaderRow","flex-layout.row#bottomHeaderRow"]
+  },
+
+  "flex-layout.row#topHeaderRow":{
+    "props": {
+      "preventHorizontalStretch":"true",
+      "fullWidth": true,
+      "blockClass":["header__header-row","header__top-header-row"]
+    },
+
+  "children":[
+    "flex-layout.col#logo-desktop",
+    "flex-layout.col#spacer",
+    "login",
+    "minicart.v2"
+  ]
+  },
+  "flex-layout.row#bottomHeaderRow":{
+    "props": {
+      "preventHorizontalStretch":"true",
+      "fullWidth": true,
+      "blockClass":["header__header-row", "header__bottom-header-row"]
+    },
+    "children":["search-bar"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/header-logo-oldwave.svg",
+      "width": "157",
+      "height": "40"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}

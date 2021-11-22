@@ -1,0 +1,22 @@
+.flexRow--header__header-row{
+  padding: 5px 70px;
+}
+
+.flexRow--header__bottom-header-row{
+  background-color: #772CE8;
+}
+.flexRow--header__top-header-row{
+  background-color:#fff;
+}
+
+.flexRow--home__promotions-section-container{
+  margin-top: 3rem;
+}
+
+.stretchChildrenWidth{
+  width: 50%;
+}
+
+.flexRow--home__promotions-section-container{
+  margin: 4rem 6rem;
+}

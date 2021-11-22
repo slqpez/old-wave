@@ -1,0 +1,198 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": { 
+    "children": [
+      "flex-layout.col#footerContainer"
+    ]
+  },
+  "flex-layout.col#footerContainer": { 
+    "children": [
+      "flex-layout.row#footerLinks",
+      "flex-layout.row#footerBottom"
+    ]
+  },
+  "flex-layout.row#footerLinks": { 
+    "children": [
+      "flex-layout.col#contactLinks",
+      "flex-layout.col#aboutLinks",
+      "flex-layout.col#servicesLinks"
+    ]
+  },
+  "flex-layout.row#footerBottom": {
+    "children": ["accepted-payment-methods","rich-text#powered"],
+    "props": {
+      "blockClass": ["footerBottom"]
+    }
+  },
+  "flex-layout.col#contactLinks": { 
+    "children": [
+      "rich-text#contactTitle",
+      "rich-text#contact1",
+      "rich-text#contact2"
+      
+    ]
+  },
+  "flex-layout.col#aboutLinks": { 
+    "children": [
+      "rich-text#aboutTitle",
+      "rich-text#about1",
+      "rich-text#about2",
+      "social-networks"
+    ]
+  },
+  "flex-layout.col#servicesLinks": { 
+    "children": [
+      "rich-text#servicesTitle",
+      "rich-text#services1",
+      "rich-text#services2",
+      "rich-text#services3",
+      "rich-text#services4"
+    ]
+  },
+  "rich-text#contactTitle": {
+    "props": {
+      "blockClass": ["footer__title"],
+      "font": "t-body",
+      "text": "Contácto",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#aboutTitle": {
+    "props": {
+      "blockClass": ["footer__title"],
+      "font": "t-body",
+      "text": "Oldwave",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#servicesTitle": {
+    "props": {
+      "blockClass": ["footer__title"],
+      "font": "t-body",
+      "text": "Servicio al cliente",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#contact1": {
+    "props": {
+      "blockClass": ["email" ,"footer-link"],
+      "font": "t-body",
+      "text": "servicioalcliente@oldwave.co ",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#contact2": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Teléfono: 316 1924",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#about1": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "¿Quiénes somos? ",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#about2": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Nuestras tiendas",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#services1": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Preguntas frecuentes",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#services2": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Estatuto de protección al consumidor",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#services3": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Términos y condiciones",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#services4": {
+    "props": {
+      "blockClass": ["footer-link"],
+      "font": "t-body",
+      "text": "Política de devoluciones",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://instagram.com/foo", "name": "Instagram" }
+      ],
+      "showInColor": "true"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "showInColor": "true"
+    }
+  },"rich-text#powered": {
+    "props": {
+      "blockClass": ["powered"],
+      "font": "t-body",
+      "text": "oldwave© 2021 | Powered by:  Experimentality",
+      "textAlignment": "RIGHT",
+      "textColor": "c-on-base",
+      "textPosition": "RIGHT"
+    }
+  }
+}

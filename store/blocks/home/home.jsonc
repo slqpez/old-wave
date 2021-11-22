@@ -1,0 +1,12 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#bannerSection",
+      "flex-layout.row#categoriesSection",
+      "flex-layout.row#promotionsSection",
+      "flex-layout.row#latestProductsSection",
+      "flex-layout.row#benefitSection",
+      "flex-layout.row#newsLetterSection"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "flex-layout.row#bannerSection": {
+    "title": "Sección de banner principal",
+    "children": ["list-context.image-list#imagesListBannerHome"],
+    "props": {
+      "blockClass": "home__banner-container"
+    }
+  },
+  "list-context.image-list#imagesListBannerHome": {
+    "title":"Lista de imágenes del banner principal",
+    "children": ["slider-layout#sliderBannerHome"],
+    "props": {
+      
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/banner-principal-oldwaves@2x.png",
+          "description": "Main banner"
+        },
+        {
+          "image": "assets/banner-2-principal@2x.png",
+          "description": "Secondary banner"
+        }
+      ]
+    }
+  },
+  "slider-layout#sliderBannerHome": {
+    "title": "Carrousel banner principal",
+    "props": {
+      "blockClass":"home-section__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

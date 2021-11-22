@@ -1,0 +1,256 @@
+{
+  "flex-layout.row#categoriesSection": {
+    "title":"Sección de categorías",
+    "children": ["flex-layout.col#categoriesContainer"],
+    "props": {
+      "blockClass": ["home__categoriesSection"]
+    }
+  },
+  "flex-layout.col#categoriesContainer": {
+    "children": ["rich-text#categoriesSectionTitle","flex-layout.row#listCategories"],
+    "props": {
+      "blockClass": ["home__categories-container"],
+      "fullWidth": true
+    }
+  },
+  "rich-text#categoriesSectionTitle": {
+    "title":"Título sección de categorías",
+    "props": {
+      "blockClass": ["home__categories-title"],
+      "font": "t-body",
+      "text": "¿Qué estás buscando hoy?",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#listCategories": {
+    "title": "Lista de categorías",
+    "children": ["slider-layout#sliderCategories"],
+    "props": {
+      "blockClass": ["categories__categories-list"]
+    }
+  },
+  "slider-layout#sliderCategories": {
+    "title":"Carrousel categorías",
+    "children":[
+      "flex-layout.col#card1",
+      "flex-layout.col#card2",
+      "flex-layout.col#card3",
+      "flex-layout.col#card4",
+      "flex-layout.col#card5",
+      "flex-layout.col#card6",
+      "flex-layout.col#card7",
+      "flex-layout.col#card8"
+    ],
+    "props": {
+      "blockClass":"categories-section__slider",
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.col#card1": {
+    "children": ["image#categorie1", "rich-text#categorie1"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card2": {
+    "children": ["image#categorie2", "rich-text#categorie2"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card3": {
+    "children": ["image#categorie3", "rich-text#categorie3"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card4": {
+    "children": ["image#categorie4", "rich-text#categorie4"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card5": {
+    "children": ["image#categorie5", "rich-text#categorie5"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card6": {
+    "children": ["image#categorie6", "rich-text#categorie6"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card7": {
+    "children": ["image#categorie7", "rich-text#categorie7"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "flex-layout.col#card8": {
+    "children": ["image#categorie8", "rich-text#categorie8"],
+    "props": {
+      "blockClass": ["categories__card-categorie"]
+    }
+  },
+  "image#categorie1": {
+    "title":"Imágen categoría 1",
+    "props": {
+      "src": "assets/categoria-carros.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie2": {
+    "title":"Imágen categoría 2",
+    "props": {
+      "src": "assets/categoria-motos.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie3": {
+    "title":"Imágen categoría 3",
+    "props": {
+      "src": "assets/categoria-ropa.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie4": {
+    "title":"Imágen categoría 4",
+    "props": {
+      "src": "assets/categoria-muebles.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie5": {
+    "title":"Imágen categoría 5",
+    "props": {
+      "src": "assets/categoria-tv-audio-foto.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie6": {
+    "title":"Imágen categoría 6",
+    "props": {
+      "src": "assets/categoria-electrodomesticos.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie7": {
+    "title":"Imágen categoría 7",
+    "props": {
+      "src": "assets/categoria-computadores.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "image#categorie8": {
+    "title":"Imágen categoría 8",
+    "props": {
+      "src": "assets/categoria-carros.svg",
+      "maxHeight": 35,
+      "blockClass":"home__categories-card-image"
+    }
+  },
+  "rich-text#categorie1": {
+    "title":"Texto categoría 1",
+    "props": {
+      "font": "t-body",
+      "text": "Carros",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie2": {
+    "title":"Texto categoría 2",
+    "props": {
+      "font": "t-body",
+      "text": "Motos",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie3": {
+    "title":"Texto categoría 3",
+    "props": {
+      "font": "t-body",
+      "text": "Ropa",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie4": {
+    "title":"Texto categoría 4",
+    "props": {
+      "font": "t-body",
+      "text": "Muebles",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie5": {
+    "title":"Texto categoría 5",
+    "props": {
+      "font": "t-body",
+      "text": "Televisores",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie6": {
+    "title":"Texto categoría 6",
+    "props": {
+      "font": "t-body",
+      "text": "Electrodomésticos",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie7": {
+    "title":"Texto categoría 7",
+    "props": {
+      "font": "t-body",
+      "text": "Computadores",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  },
+  "rich-text#categorie8": {
+    "title":"Texto categoría 8",
+    "props": {
+      "font": "t-body",
+      "text": "Carros",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT",
+      "blockClass":"home__categories-card-text"
+    }
+  }
+}

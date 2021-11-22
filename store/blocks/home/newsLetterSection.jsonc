@@ -1,0 +1,42 @@
+{
+  "flex-layout.row#newsLetterSection": {
+    "children": ["rich-text#newsLetterTitle","newsletter-form"],
+    "props": {
+      "blockClass": ["home__news-letter-section"]
+    }
+  },
+  "rich-text#newsLetterTitle": {
+    "props": {
+      "blockClass": ["home__news-letter-title"],
+      "font": "t-body",
+      "text": "**!Entérate de todo¡** <br/> Recibe la información de nuestras ofertas",
+      "textAlignment": "LEFT",
+      "textColor": "c-on-base",
+      "textPosition": "LEFT"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit",
+      "newsletter-checkbox-confirmation"
+    ]
+  },
+  "newsletter-input-email":{
+"props":{
+  "placeholderText":"Ingresa tu correo electrónico"
+}
+  },
+  "newsletter-submit":{
+    "props":{
+      "submitButtonLabel":"Suscribirme"
+    }
+  },
+  "newsletter-checkbox-confirmation":{
+    "title": "Checkbox Confirmation",
+    "children":[],
+    "props":{
+      "checkboxLabel":"*Al suscribirme acepto recibir emails e información de oldwaves, bajo sus Políticas de datos personales"
+    }
+  }
+}

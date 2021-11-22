@@ -1,0 +1,44 @@
+.confirmationCheckboxContainer :global(.vtex-checkbox__label ){
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__container ){
+display: none;}
+
+.formSubmitContainer :global(.vtex-button ){
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 30px;
+  text-transform: capitalize;
+  width: 300px;
+}
+
+.formSubmitContainer :global(.vtex-button ):hover{
+  background-color: #9c6de2 ;
+  
+}
+
+
+.emailInputContainer :global(.vtex-styleguide-9-x-input){
+  border-radius: 30px;
+  outline: none;
+}
+
+.emailInputContainer {
+  border: none !important;
+  outline: none !important;
+  width:45%;
+}
+
+
+.emailInputContainer :global(.vtex-input-prefix__group){
+ border: none;
+}
+
+.newsletterForm{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+

@@ -1,0 +1,93 @@
+{
+  "flex-layout.row#benefitSection": {
+    "children": ["flex-layout.col#benefit1","flex-layout.col#benefit2", "flex-layout.col#benefit3","flex-layout.col#benefit4"],
+    "props": {
+      "blockClass": ["home__benefitSection"]
+    }
+  },
+  "flex-layout.col#benefit1": {
+    "children": ["image#imageBenefit1", "rich-text#textBenefit1"],
+    "props": {
+      "blockClass": ["benefit__container"]
+    }
+  },
+  "flex-layout.col#benefit2": {
+    "children": ["image#imageBenefit2", "rich-text#textBenefit2"],
+    "props": {
+      "blockClass": ["benefit__container"]
+    }
+  },
+  "flex-layout.col#benefit3": {
+    "children": ["image#imageBenefit3", "rich-text#textBenefit3"],
+    "props": {
+      "blockClass": ["benefit__container"]
+    }
+  },
+  "flex-layout.col#benefit4": {
+    "children": ["image#imageBenefit4", "rich-text#textBenefit4"],
+    "props": {
+      "blockClass": ["benefit__container"]
+    }
+  },
+  "image#imageBenefit1": {
+    "props": {
+      "blockClass": ["benefit__image"],
+      "maxHeight": 43,
+      "src": "assets/icon-compras-seguras.svg"
+    }
+  },
+
+  "image#imageBenefit2": {
+    "props": {
+      "blockClass": ["benefit__image"],
+      "maxHeight": 43,
+      "src": "assets/icon-multiples-medios-pago.svg"
+    }
+  },
+  "image#imageBenefit3": {
+    "props": {
+      "blockClass": ["benefit__image"],
+      "maxHeight": 43,
+      "src": "assets/icon-calidad-garantizada.svg"
+    }
+  },
+  "image#imageBenefit4": {
+    "props": {
+      "blockClass": ["benefit__image"],
+      "maxHeight": 43,
+      "src": "assets/icon-envios-todo-elpais.svg"
+    }
+  },
+  "rich-text#textBenefit1": {
+    "props": {
+      "blockClass": ["benefit__text"],
+      "font": "t-body",
+      "text": "Compras seguras",
+      "textColor": "c-on-base"
+    }
+  },
+  "rich-text#textBenefit2": {
+    "props": {
+      "blockClass": ["benefit__text"],
+      "font": "t-body",
+      "text": "Múltiples medios de pago",
+      "textColor": "c-on-base"
+    }
+  },
+  "rich-text#textBenefit3": {
+    "props": {
+      "blockClass": ["benefit__text"],
+      "font": "t-body",
+      "text": "Calidad garantizada",
+      "textColor": "c-on-base"
+    }
+  },
+  "rich-text#textBenefit4": {
+    "props": {
+      "blockClass": ["benefit__text"],
+      "font": "t-body",
+      "text": "Envíos a todo el país",
+      "textColor": "c-on-base"
+    }
+  }
+}

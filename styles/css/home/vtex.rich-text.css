@@ -1,0 +1,38 @@
+.paragraph--home__categories-title{
+  color: #772CE8;
+  font-size: 2.18rem;
+  font-weight: 700;
+}
+
+.paragraph--latestSectionTitle{
+  color: #5C5E64;
+  font-size: 1.5rem;
+  
+}
+
+.paragraph--home__news-letter-title{
+  color: #fff;
+  font-size:1,625rem ;
+  font-weight:400;
+  margin-left: 1.3rem;
+}
+
+.strong--home__news-letter-title{
+  font-size: 1.8rem;
+}
+.paragraph--footer__title{
+  color: #772CE8;
+  font-weight: 700;
+  margin:1rem;
+}
+
+
+.link--email{
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+  margin:0;
+}
+
+.paragraph--footer-link{
+  margin: .2rem;
+}

@@ -1,0 +1,41 @@
+{
+  "flex-layout.row#latestProductsSection": {
+    "title":"Sección de productos más recientes",
+    "children": ["flex-layout.col#latestProductsCol"],
+    "props": {
+      "blockClass": ["home__latest-products-section"]
+    }
+  },
+  "flex-layout.col#latestProductsCol": {
+    "children": ["rich-text#latestSectionTitle", "list-context.product-list#listLatestProducts"],
+    "props": {
+      "blockClass": ["name"]
+    }
+  },
+  "rich-text#latestSectionTitle": {
+    "props": {
+      "blockClass": ["latestSectionTitle"],
+      "font": "t-body",
+      "text": "Productos más recientes",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base",
+      "textPosition": "CENTER"
+    }
+  },
+  "list-context.product-list#listLatestProducts": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#sliderLatestProducts"]
+  },
+  "slider-layout#sliderLatestProducts": {
+    "title": "Carrousel últimos productos",
+    "props": {
+      "blockClass":"latest-products__slider",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}

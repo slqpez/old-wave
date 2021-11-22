@@ -1,0 +1,86 @@
+{
+  "flex-layout.row#promotionsSection": {
+    "title": "Sección de promociones",
+    "children": ["flex-layout.col#promotionsCol"],
+    "props": {
+      "blockClass": ["home__promotions-section-container"]
+    }
+  },
+  "flex-layout.col#promotionsCol":{
+    "children": ["flex-layout.row#promotionsRow1","flex-layout.row#promotionsRow2"],
+    "props": {
+      "blockClass": ["home__promotions-col"]
+    }
+  },
+  "flex-layout.row#promotionsRow1":{
+    "children": ["image#banner1", "flex-layout.row#halfProducts1"],
+    "props": {
+      "blockClass": ["home__promotions-row1"]
+    }
+  },
+  "flex-layout.row#promotionsRow2":{
+    "children": ["flex-layout.row#halfProducts1","image#banner2"],
+    "props": {
+      "blockClass": ["home__promotions-row2"]
+    }
+  },
+
+  "flex-layout.row#halfProducts1": {
+    "children": ["image#prom1", "image#prom2"],
+    "props": {
+      "blockClass": ["halfProducts1"]
+    }
+  },
+  "flex-layout.row#halfProducts2": {
+    "children": ["image#prom3", "image#prom4"],
+    "props": {
+      "blockClass": ["halfProducts2"]
+    }
+  },
+  "image#banner1": {
+    "props": {
+      "blockClass": ["promotions-section__banner1"],
+      "src": "assets/banner-auxiliar-ordenadores@2x.png"
+      
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "blockClass": ["promotions-section__banner2"],
+      "src": "assets/banner-auxiliar-bicicletas@2x.png"
+    }
+  },
+  "image#prom1": {
+    "props": {
+      "blockClass": ["promotions-section__prom-image"],
+      "src": "assets/ipad@2x.png",
+      "maxWidth": 150,
+      "maxHeight": 150
+    }
+  },
+  "image#prom2": {
+    "props": {
+      "blockClass": ["promotions-section__prom-image"],
+      "src": "assets/canon@2x.png",
+      "maxWidth": 150,
+      "maxHeight": 150
+    }
+  },
+  "image#prom3": {
+    "props": {
+      "blockClass": ["promotions-section__prom-image"],
+      "src": "assets/portatil@2x.png",
+      "maxWidth": 150,
+      "maxHeight": 150
+    }
+  },
+  "image#prom4": {
+    "props": {
+      "blockClass": ["promotions-section__prom-image"],
+      "src": "assets/ipad@2x.png",
+      "maxWidth": 150,
+      "maxHeight": 150
+    }
+  }
+  
+}

@@ -1,0 +1,31 @@
+.flexRowContent--home__banner-container{
+  width: 100%;
+}
+.flexCol--categories__card-categorie{
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--halfProducts1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .flexCol--benefit__container{
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+} 
+
+.flexRow--home__benefitSection{
+    margin: 5rem 0;
+    background: #F7F7F7;
+    padding: 2.5rem 0;
+    justify-content: center;
+    width: 100%;
+}
+.flexRow--home__news-letter-section{
+  background: #772CE8;
+  color: #fff;
+  padding: 2.5rem;
+}
